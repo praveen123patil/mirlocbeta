@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99.877" height="100" viewBox="0 0 99.877 100">
+  <g id="Group_1172" data-name="Group 1172" transform="translate(-1054.158 -791)">
+    <g id="Group_1161" data-name="Group 1161" transform="translate(-12025 -4534.864)">
+      <g id="smile_1_" data-name="smile (1)" transform="translate(13080 5326)">
+        <ellipse id="Ellipse_130" data-name="Ellipse 130" cx="49" cy="50" rx="49" ry="50" transform="translate(0 -0.136)" fill="#ffd13a"/>
+        <g id="Group_1160" data-name="Group 1160" transform="translate(20.525 29.878)">
+          <path id="Path_672" data-name="Path 672" d="M22.446,21.341a3.08,3.08,0,0,1-3.079-3.079,4.105,4.105,0,0,0-8.21,0,3.079,3.079,0,1,1-6.158,0,10.263,10.263,0,0,1,20.525,0A3.08,3.08,0,0,1,22.446,21.341Z" transform="translate(-5 -8)" fill="rgba(0,0,0,0.4)"/>
+          <path id="Path_673" data-name="Path 673" d="M31.446,21.341a3.08,3.08,0,0,1-3.079-3.079,4.105,4.105,0,0,0-8.21,0,3.079,3.079,0,1,1-6.158,0,10.263,10.263,0,0,1,20.525,0A3.08,3.08,0,0,1,31.446,21.341Z" transform="translate(22.945 -8)" fill="rgba(0,0,0,0.4)"/>
+          <path id="Path_674" data-name="Path 674" d="M30.629,29.413A33.316,33.316,0,0,1,6.9,19.582a3.08,3.08,0,0,1,4.355-4.355,27.19,27.19,0,0,0,19.372,8.029A27.219,27.219,0,0,0,50.005,15.23a3.08,3.08,0,0,1,4.355,4.355A33.346,33.346,0,0,1,30.629,29.413Z" transform="translate(-1.894 11.637)" fill="rgba(0,0,0,0.4)"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_699" data-name="Path 699" d="M5.309.283,28.094.348l.958,3.576-22.488,0Z" transform="matrix(0.966, 0.259, -0.259, 0.966, 1050.046, 842.057)" fill="#007a9a"/>
+    <path id="Path_702" data-name="Path 702" d="M0,3.642l22.785-.066L23.743,0,1.256.005Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 1154.035, 847.222)" fill="#007a9a"/>
+    <path id="Path_700" data-name="Path 700" d="M17.478.105,31.137.085,31,4,20.056,3.9Z" transform="matrix(0.999, -0.035, 0.035, 0.999, 1045.939, 869.542)" fill="#007a9a"/>
+    <path id="Path_701" data-name="Path 701" d="M0,3.895l13.659.02L13.522,0,2.578.1Z" transform="matrix(-0.999, -0.035, 0.035, -0.999, 1144.646, 872.93)" fill="#007a9a"/>
+    <g id="medical-mask" transform="translate(1064.082 735.056)">
+      <path id="Path_693" data-name="Path 693" d="M132.415,133.118v30.618a61.667,61.667,0,0,1-54.415,0V133.118a61.654,61.654,0,0,1,54.415,0Z" transform="translate(-65.064 -20.587)" fill="#e4f1ff"/>
+      <path id="Path_695" data-name="Path 695" d="M158.67,194.15h29.754v4.586H158.67Z" transform="translate(-133.404 -77.651)" fill="#01c6f9"/>
+      <path id="Path_696" data-name="Path 696" d="M158.67,253.15h29.754v4.586H158.67Z" transform="translate(-133.404 -127.633)" fill="#01c6f9"/>
+      <path id="Path_697" data-name="Path 697" d="M158.67,312.15h29.754v4.586H158.67Z" transform="translate(-133.404 -177.614)" fill="#01c6f9"/>
+    </g>
+  </g>
+</svg>

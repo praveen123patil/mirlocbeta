@@ -32,7 +32,7 @@
                 <div class="col-md-9 col-lg-9 col-sm-12 col-12 content-navigation">
                     <div class="section-wrap" id="project-deatail-one">
                         <div class="video-sec relative">
-                            <img src="images/kadamba.png" class="img-fluid w-100">
+                            <img src="<?php echo base_url()?>optimum/main/images/kadamba.png" class="img-fluid w-100">
                             <div class="play--btn modal-videos"
                                 data-vsrc="https://s2.q4cdn.com/482484005/files/videos/EOP_REIT_August-2019_BestVersion.mp4">
                                 <span>VIDEO</span>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="custom-project-col">
                                 <a href="#">
-                                    <img src="./images/kadamba_logo.png" class="img-fluid">
+                                    <img src="<?php echo base_url()?>optimum/main/images/kadamba_logo.png" class="img-fluid">
                                     <span>GO TO SITE</span>
                                 </a>
                             </div>
@@ -70,18 +70,18 @@
                     <div class="section-wrap" id="project-detail-three">
                         <h4>PROJECT FEATURES</h4>
                         <ul class="nav">
-                            <li style="background: url(/images/air.png);">Spacious, well ventilated apartments</li>
-                            <li style="background: url(/images/plant.png);">Peaceful and pleasant surroundings</li>
-                            <li style="background: url(/images/garden.png);">Landscaped gardens and recreational
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/air.png);">Spacious, well ventilated apartments</li>
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/plant.png);">Peaceful and pleasant surroundings</li>
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/garden.png);">Landscaped gardens and recreational
                                 spaces
                             </li>
-                            <li style="background: url(/images/flower.png);">Hotel and Spa</li>
-                            <li style="background: url(/images/rain.png);">Rainwater harvesting</li>
-                            <li style="background: url(/images/treatment.png);">Garbage disposal plant
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/flower.png);">Hotel and Spa</li>
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/rain.png);">Rainwater harvesting</li>
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/treatment.png);">Garbage disposal plant
                                 (Vermicomposting)
                             </li>
-                            <li style="background: url(/images/power.png);">Solar water heating panels</li>
-                            <li style="background: url(/images/vectorobject.png);">Proximity to daily necessities
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/power.png);">Solar water heating panels</li>
+                            <li style="background: url(<?php echo base_url()?>optimum/main/images/vectorobject.png);">Proximity to daily necessities
                             </li>
                         </ul>
                     </div>
@@ -92,7 +92,7 @@
 
                     <div class="section-wrap" id="project-detail-four">
                         <h4>SITE PLAN</h4>
-                        <img src="images/kadamba-plan.png" class="img-fluid" alt="">
+                        <img src="<?php echo base_url()?>optimum/main/images/kadamba-plan.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="section-wrap">
@@ -115,14 +115,14 @@
                         <h4>FLOOR PLAN</h4>
                         <div class="row justify-content-between">
                             <div class="site-pan">
-                                <img src="images/kadamba_plan_a.png" class="img-fluid w-100" alt="">
+                                <img src="<?php echo base_url()?>optimum/main/images/kadamba_plan_a.png" class="img-fluid w-100" alt="">
                             </div>
 
                             <div class="site-pan">
-                                <img src="images/kadamba_plan_d.png" class="img-fluid w-100" alt="">
+                                <img src="<?php echo base_url()?>optimum/main/images/kadamba_plan_d.png" class="img-fluid w-100" alt="">
                             </div>
                             <div class="site-pan">
-                                <img src="images/kadamba_plan_h.png" class="img-fluid w-100" alt="">
+                                <img src="<?php echo base_url()?>optimum/main/images/kadamba_plan_h.png" class="img-fluid w-100" alt="">
                             </div>
 
                         </div>

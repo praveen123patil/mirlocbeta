@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Mirloc Good Earth Properties</title>
+  <title>Mirloc Goo Earth Properties</title>
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/owl.carousel.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/font-awesome.css">
@@ -16,8 +16,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/style.css">
 </head>
 
-<body <?php if ($_SERVER['REQUEST_URI'] != '/codeigniterTemplate/'):?> class='other-pages' <?endif;?>>
-  <header class="<?php if ($_SERVER['REQUEST_URI'] === '/codeigniterTemplate/'):?> sticky <?endif;?>">
+<body <?php if ($_SERVER['REQUEST_URI'] != '/mirlocbeta/'):?> class='other-pages' <?php endif;?>>
+  <header class="<?php if ($_SERVER['REQUEST_URI'] === '/mirlocbeta/'):?> sticky <?php endif;?>">
     <div class="container-fluid">
       <div class="row top--header">
         <div class="col-md-2 col-lg-2 col-sm-2 col-2">

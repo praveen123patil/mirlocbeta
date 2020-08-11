@@ -20,13 +20,36 @@ class Main extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['banner'] = $this->homebanner_model->get_posts(FALSE, FALSE, FALSE);
+		$data['green_solutions'] = $this->greensolution_model->get_posts(FALSE, FALSE, FALSE);
+		$data['testimonials'] = $this->testimonials_model->get_posts(FALSE, FALSE, FALSE);
 		$data['middel_body'] = 'main/index';
-			$this->load->view('templates',$data);
+		$this->load->view('templates',$data);
 	}
 
   public function contact()
 	{
 		$data['middel_body'] = 'main/contactus';
+			$this->load->view('templates',$data);
+	}
+
+	public function aboutus()
+	{
+		$data['middel_body'] = 'main/aboutus';
+			$this->load->view('templates',$data);
+	}
+
+	public function csr()
+	{
+		$data['csr'] = $this->csr_model->get_posts(FALSE, FALSE, FALSE);
+		$data['middel_body'] = 'main/csr';
+			$this->load->view('templates',$data);
+	}
+
+	public function properties()
+	{
+		$data['csr'] = $this->csr_model->get_posts(FALSE, FALSE, FALSE);
+		$data['middel_body'] = 'main/csr';
 			$this->load->view('templates',$data);
 	}
 
@@ -40,6 +63,27 @@ class Main extends CI_Controller {
 	{
 		$data['middel_body'] = 'main/project_detail';
 			$this->load->view('templates',$data);
+	}
+
+	public function contactcreate(){
+
+		$data['page_title'] = 'Add Banner';
+
+
+		$this->form_validation->set_rules('full_name', 'Title', 'required');
+
+		if($this->form_validation->run() === FALSE){
+			$data['main_content'] = $this->load->view('main/contactus', $data, TRUE);
+		$this->load->view('templates',$data);
+		}else {
+
+			$this->contactus_model->create_post();
+
+			// Set message
+			$this->session->set_flashdata('post_created', 'Your post has been created');
+
+			redirect(base_url('contact/'));
+		}
 	}
 
 

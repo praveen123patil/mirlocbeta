@@ -26,7 +26,13 @@ $(document).ready(function ($) {
   $('.homemodal .close').click(function () {
     $('.homemodal').fadeOut();
   })
+  $(window).scroll(function () {
+    var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
 
+    if (scroll >= 100) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
   $('#green-carousel').owlCarousel({
     loop: false,
     responsiveClass: true,
@@ -128,3 +134,11 @@ $(window).on("load", function () {
       doAnimations($animatingElems);
     });
   })(jQuery);
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

@@ -1,24 +1,27 @@
 <main>
     <!-- Banner section starts here -->
-    <section id="about-banner" class="container-fluid">
-      <div class="row">
-        <div class="container">
-          <div class="banner-breadcrumb">
-            <ul class="breadcrumb-list">
-              <li>
-                <a href="#">home</a>
-              </li>
-              <li>
-                <a href="#">about us</a>
-              </li>
-            </ul>
+    <div class="container-fluid banner--header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="">about us</a></li>
+              </ol>
+            </nav>
           </div>
-          <div class="banner-text-wrapper">
-            <h2><span>About</span> us</h2>
+
+          <div class="col-12 align-self-end">
+            <div class="main--head">
+              <h3>About us</h3>
+            </div>
           </div>
         </div>
+
       </div>
-    </section>
+      </div>
+
     <!-- Banner section ends here -->
 
     <!-- Tab section starts here -->

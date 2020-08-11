@@ -104,8 +104,8 @@
   <div class="container-fluid" id="featured-projects">
     <div class="container">
       <h3 class="text-center text-head"> <span> Featured </span> Projects </h3>
-      <div class="row">
-        <div class="col-lg-8 col-md-12 col-sm-12 col-12 project--list  pr-lg-0" id="pro--col">
+      <div class="row col-12 justify-content-between frst-row">
+        <div class="col-one-pro" id="pro--col">
           <div class="img-wrapper">
             <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
             <div class="img-head">
@@ -124,7 +124,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12 project--list pr--right">
+        <div class="col-one-pro project--list ">
           <div class="img-wrapper mb-2">
             <div class="pro--col" style="background: url('<?php echo base_url()?>optimum/main/images/project1.jpg')"> </div>
             <div class="img-head">
@@ -144,8 +144,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-7 col-md-12 col-sm-12 col-12 project--list pr--list--left  pr-lg-0">
+      <div class="row justify-content-between col-12">
+        <div class="col-two-pro project--list">
           <div class=" img-wrapper">
             <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
             <div class="img-head">
@@ -164,7 +164,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12 project--list pr--list--right pr--right ">
+        <div class="col-two-pro project--list ">
           <div class="img-wrapper mb-2">
             <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
             <div class="img-head">
@@ -181,7 +181,8 @@
               </div>
             </div>
           </div>
-
+        </div>
+         <div class="col-two-pro project--list">
           <div class="img-wrapper">
             <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
             <div class="img-head">

@@ -77,7 +77,7 @@ $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=template',
 	'hostname' => "localhost",
 	'username' => "root",
-	'password' => "root",
+	'password' => "",
 	'database' => "template",
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
@@ -94,3 +94,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+

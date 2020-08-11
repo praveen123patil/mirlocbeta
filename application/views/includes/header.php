@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Mirloc Goo Earth Properties</title>
+  <title>Mirloc Good Earth Properties</title>
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/owl.carousel.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/font-awesome.css">
@@ -15,21 +15,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/slick.css">
   <link rel="stylesheet" href="<?php echo base_url()?>optimum/main/css/style.css">
 </head>
-
 <body <?php if ($_SERVER['REQUEST_URI'] != '/mirlocbeta/'):?> class='other-pages' <?php endif;?>>
-  <header class="<?php if ($_SERVER['REQUEST_URI'] === '/mirlocbeta/'):?> sticky <?php endif;?>">
+  <header class=" sticky">
     <div class="container-fluid">
       <div class="row top--header">
         <div class="col-md-2 col-lg-2 col-sm-2 col-2">
           <a href="#" class="navbar-brand">
-            <img src="<?php echo base_url()?>optimum/main/images/logo.png" alt="Logo">
+            <img src="<?php echo base_url()?>optimum/main/images/logo2.png" alt="Logo">
           </a>
         </div>
         <div class="col-md-10 col-lg-10 col-sm-10 col-10 desktop-menu">
-          <ul class="nav justify-content-end left--col">
-            <li class="nav-item"><a class="nav-link" href="mailto:mail@milrocgoodearth.in"><img src="<?php echo base_url()?>optimum/main/images/msg.png"
-                  alt="">mail@milrocgoodearth.in </a> </li>
-            <li class="nav-item"><a class="nav-link" href="tel:0832 223 0536"><img src="<?php echo base_url()?>optimum/main/images/call.png" alt="">0832 223
+          <ul class="nav justify-content-end left--col ">
+            <li class="nav-item mail"><a class="nav-link" href="mailto:mail@milrocgoodearth.in">mail@milrocgoodearth.in </a> </li>
+            <li class="nav-item tel"><a class="nav-link" href="tel:0832 223 0536">0832 223
                 0536/6647080</a></li>
           </ul>
           <ul class="nav justify-content-end right-col">
@@ -46,16 +44,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="nav-item"><a class="nav-link" href="tel:0832 223 0536"><img src="<?php echo base_url()?>optimum/main/images/call.png" alt="">0832 223
                 0536/6647080</a></li>
           </ul>
-          <div class="hamburger" id="hamburger-3">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
+          <a href="javascript:void(0)" onclick="openNav();" class="nav-menu"><img src="<?php echo base_url()?>optimum/main/images/nav.svg" alt="nav"></a>
         </div>
       </div>
 
     </div>
   </header>
+
+
+  <div id="mySidenav" class="sidenav" style="width: 0px;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#" target="_blank">Projects </a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Let's Talk</a>
+  </div>
+
   <div class="homemodal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">

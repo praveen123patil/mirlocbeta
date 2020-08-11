@@ -18,6 +18,18 @@ $(document).ready(function ($) {
     }
   });
 
+  $('#mySidenav').click(function (e) {
+    e.stopPropagation();
+  });
+
+  $('.nav-menu').click(function (e) {
+    e.stopPropagation();
+    $('#mySidenav').css('width', '350px');
+  });
+
+  $('body,html').click(function (e) {
+    $('#mySidenav').css('width', 0);
+  });
   $('.contactmodal').click(function () {
     $('.homemodal').fadeIn();
     $(window).scrollTop(0);
@@ -46,7 +58,7 @@ $(document).ready(function ($) {
         items: 4
       },
       1000: {
-        items: 5
+        items: 6
       }
     }
   });
@@ -66,11 +78,9 @@ $(document).ready(function ($) {
       $(this).toggleClass("is-active");
     });
   });
-  var divHeightOne = $('#pro--col .img-head').height();
-  $('.pro--col').css('min-height', divHeightOne + 'px');
 
-  var divHeightTwo = $('.pr--list--right').height();
-  $('.pr--list--left').css('min-height', divHeightTwo + 'px');
+
+
 
   var divHeightThree = $('.sec-col').height();
   $('.primry-col .pr--banenr').css('height', divHeightThree + 'px');
@@ -78,11 +88,6 @@ $(document).ready(function ($) {
 
 
 $(window).on('resize', function () {
-  var divHeightOne = $('#pro--col .img-head').height();
-  $('.pro--col').css('min-height', divHeightOne + 'px');
-  var divHeightTwo = $('.pr--list--right').height();
-  $('.pr--list--left').css('min-height', divHeightTwo + 'px');
-
   var divHeightThree = $('.sec-col').height();
   $('.primry-col .pr--banenr').css('height', divHeightThree + 'px');
 }).trigger('resize');
@@ -99,41 +104,7 @@ $(window).on("load", function () {
 })
 
 
-  (function ($) {
-    //Function to animate slider captions
-    function doAnimations(elems) {
-      //Cache the animationend event in a variable
-      var animEndEv = "webkitAnimationEnd animationend";
 
-      elems.each(function () {
-        var $this = $(this),
-          $animationType = $this.data("animation");
-        $this.addClass($animationType).one(animEndEv, function () {
-          $this.removeClass($animationType);
-        });
-      });
-    }
-
-    //Variables on page load
-    var $myCarousel = $("#homeCarousel"),
-      $firstAnimatingElems = $myCarousel
-        .find(".carousel-item:first")
-        .find("[data-animation ^= 'animated']");
-
-    //Initialize carousel
-    $myCarousel.carousel();
-
-    //Animate captions in first slide on page load
-    doAnimations($firstAnimatingElems);
-
-    //Other slides to be animated on carousel slide event
-    $myCarousel.on("slide.bs.carousel", function (e) {
-      var $animatingElems = $(e.relatedTarget).find(
-        "[data-animation ^= 'animated']"
-      );
-      doAnimations($animatingElems);
-    });
-  })(jQuery);
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
@@ -142,3 +113,46 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+$(document).ready(function () {
+  $("#homeSlide .carousel-item").css("height", $(window).height());
+});
+$(window).resize(function () {
+  $('#homeSlide .carousel-item').css('height', $(window).height());
+});
+
+(function ($) {
+  //Function to animate slider captions
+  function doAnimations(elems) {
+    //Cache the animationend event in a variable
+    var animEndEv = "webkitAnimationEnd animationend";
+
+    elems.each(function () {
+      var $this = $(this),
+        $animationType = $this.data("animation");
+      $this.addClass($animationType).one(animEndEv, function () {
+        $this.removeClass($animationType);
+      });
+    });
+  }
+
+  //Variables on page load
+  var $myCarousel = $("#homeCarousel"),
+    $firstAnimatingElems = $myCarousel
+      .find(".carousel-item:first")
+      .find("[data-animation ^= 'animated']");
+
+  //Initialize carousel
+  $myCarousel.carousel();
+
+  //Animate captions in first slide on page load
+  doAnimations($firstAnimatingElems);
+
+  //Other slides to be animated on carousel slide event
+  $myCarousel.on("slide.bs.carousel", function (e) {
+    var $animatingElems = $(e.relatedTarget).find(
+      "[data-animation ^= 'animated']"
+    );
+    doAnimations($animatingElems);
+  });
+})(jQuery);

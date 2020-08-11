@@ -38,28 +38,28 @@
             </div>
         </div>
         <!-- Banner section starts here -->
-        <section id="about-banner" class="container-fluid">
-            <div class="row">
-                <div class="container">
-                    <div class="banner-breadcrumb">
-                        <ul class="breadcrumb-list">
-                            <li>
-                                <a href="#">home</a>
-                            </li>
-                            <li>
-                                <a href="#">about us</a>
-                            </li>
-                            <li>
-                                <a href="#">Csr</a>
-                            </li>
-                        </ul>
+        <div class="container-fluid banner--header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">CSR</a></li>
+                            </ol>
+                        </nav>
                     </div>
-                    <div class="banner-text-wrapper">
-                        <h2><span>CSR</h2>
+
+                    <div class="col-12 align-self-end">
+                        <div class="main--head">
+                            <h3>CSR</h3>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </section>
+        </div>
         <!-- Banner section ends here -->
 
         <!-- Tab section starts here -->
@@ -85,12 +85,11 @@
                             </div>
                             <div class="row csr-detail-wrapper">
                               <?php foreach($csr as $obj) : ?>
-                                <div class="col-lg-3 col-md-12 col-sm-12 col-12 p-0">
+                                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                                     <div class="csr-listing-wrapper">
                                         <img src="<?php echo site_url(); ?>assets/images/csr/<?php echo $obj['icon']; ?>" alt="growth" class="upper-icon">
                                         <h3><?php echo $obj['title']; ?></h3>
                                         <?php echo $obj['detail']; ?>
-                                        <img src="<?php echo base_url()?>optimum/main/images/multimedia-option.png" alt="growth" class="lower-icon">
                                     </div>
                                 </div>
                                 <?php endforeach; ?>

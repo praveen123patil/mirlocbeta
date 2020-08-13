@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container-fluid">
       <div class="row top--header">
         <div class="col-md-2 col-lg-2 col-sm-2 col-2">
-          <a href="#" class="navbar-brand">
+          <a href="/" class="navbar-brand">
             <img src="<?php echo base_url()?>optimum/main/images/logo2.png" alt="Logo">
           </a>
         </div>
@@ -31,9 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 0536/6647080</a></li>
           </ul>
           <ul class="nav justify-content-end right-col">
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a> </li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/projects/">Projects</a> </li>
+            <li class="nav-item"><a class="nav-link" href="/aboutus/">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link head-btn contactmodal" href="#">Let’s Talk</a></li>
           </ul>
         </div>
@@ -54,10 +54,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <div id="mySidenav" class="sidenav" style="width: 0px;">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#" target="_blank">Projects </a>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <a href="#">Let's Talk</a>
+    <a href="/projects/" target="_blank">Projects </a>
+    <a href="/aboutus/">About Us</a>
+    <a href="/contact/">Contact Us</a>
+    <a class="nav-link head-btn contactmodal" href="#">Let's Talk</a>
   </div>
 
   <div class="homemodal">

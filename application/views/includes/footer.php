@@ -19,9 +19,9 @@
         <div class="col-md-3 col-lg-3 col-sm-6 col-12">
           <h4>Important Link</h4>
           <ul class="nav flex-column">
-            <li class="nav-item"><a href="#" class="nav-link" target="”_blank”">Projects</a>
+            <li class="nav-item"><a href="/projects/" class="nav-link" target="”_blank”">Projects</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link" target="”_blank”">About Us</a>
+            <li class="nav-item"><a href="/aboutus/" class="nav-link" target="”_blank”">About Us</a>
             </li>
           </ul>
         </div>
@@ -36,8 +36,8 @@
 
       <div class="row bottom--footer text-center justify-content-center">
         <h4 class="text-center">© 2020 Copyright <span>|</span> <a
-            href="https://covid19.embassyofficeparks.com/disclaimer/"> Disclaimer.</a> <span>|</span> <a
-            href="https://covid19.embassyofficeparks.com/privacypolicy/">Privacy Policy</a></h4>
+            href="#"> Disclaimer.</a> <span>|</span> <a
+            href="#">Privacy Policy</a></h4>
       </div>
 
     </div>

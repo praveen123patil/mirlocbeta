@@ -22,6 +22,7 @@ class Main extends CI_Controller {
 	{
 		$data['banner'] = $this->homebanner_model->get_posts(FALSE, FALSE, FALSE);
 		$data['green_solutions'] = $this->greensolution_model->get_posts(FALSE, FALSE, FALSE);
+		$data['property'] = $this->properties_model->get_posts(FALSE, 5, FALSE);
 		$data['testimonials'] = $this->testimonials_model->get_posts(FALSE, FALSE, FALSE);
 		$data['middel_body'] = 'main/index';
 		$this->load->view('templates',$data);
@@ -48,21 +49,26 @@ class Main extends CI_Controller {
 
 	public function properties()
 	{
-		$data['csr'] = $this->csr_model->get_posts(FALSE, FALSE, FALSE);
-		$data['middel_body'] = 'main/csr';
-			$this->load->view('templates',$data);
-	}
-
-  public function projects()
-	{
+		$data['property'] = $this->properties_model->get_posts(FALSE, FALSE, FALSE);
 		$data['middel_body'] = 'main/projects';
 			$this->load->view('templates',$data);
 	}
 
-  public function projects_details()
+  // public function projects()
+	// {
+	// 	$data['middel_body'] = 'main/projects';
+	// 		$this->load->view('templates',$data);
+	// }
+
+  public function projects_details($id = NULL)
 	{
+		$data['properties_banner'] = $this->propertybanner_model->get_posts($id, FALSE, FALSE);
+		$data['properties'] = $this->properties_model->get_posts($id);
+		if(empty($data['properties'])){
+				show_404();
+			}
 		$data['middel_body'] = 'main/project_detail';
-			$this->load->view('templates',$data);
+		$this->load->view('templates',$data);
 	}
 
 	public function contactcreate(){

@@ -7,7 +7,7 @@
 
            <div class="panel panel-info">
                 <div class="panel-heading">
-                     <i class="fa fa-plus"></i> &nbsp;<?php echo $property_banner['image_title']; ?><a href="<?php echo site_url('admin/propertybanner/delete/'.$property_banner['id']); ?>" class="btn btn-info btn-sm pull-right"><i class="fa fa-trash-o"></i> Delete Image </a>
+                     <i class="fa fa-plus"></i> &nbsp;<?php echo $property_banner['image_title']; ?><a href="<?php echo site_url('admin/propertybanner/delete/'.$property_banner['pid']); ?>" class="btn btn-info btn-sm pull-right"><i class="fa fa-trash-o"></i> Delete Image </a>
 
                 </div>
                 <div class="panel-body table-responsive">
@@ -20,7 +20,7 @@
             <?php endif ?>
 
 
-                  <form method="post" action="<?php echo base_url('admin/propertybanner/create') ?>" class="form-horizontal" enctype="multipart/form-data" novalidate>
+                  <form method="post" action="<?php echo base_url('admin/propertybanner/update') ?>" class="form-horizontal" enctype="multipart/form-data" novalidate>
                     <div class="form-group">
                       <label class="col-md-12" for="example-text">Property Categories</label>
                         <div class="col-sm-12">
@@ -42,7 +42,7 @@
 
                     <h3 class="box-title">File Upload</h3>
                     <label for="input-file-now-custom-1">You can add a default value</label>
-                    <input type="file" name='userfile' id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url();?>assets/images/properties/<?php echo $banners['image']; ?>"/>
+                    <input type="file" name='userfile' id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url();?>assets/images/properties/<?php echo $property_banner['image']; ?>"/>
                     <hr>
                     <!-- CSRF token -->
                     <input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>" />

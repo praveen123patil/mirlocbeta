@@ -105,26 +105,29 @@
     <div class="container">
       <h3 class="text-center text-head"> <span> Featured </span> Projects </h3>
       <div class="row col-12 justify-content-between frst-row">
+        <?php $count=0;
+        foreach($property as $obj) :
+          ?>
         <div class="col-one-pro" id="pro--col">
           <div class="img-wrapper">
-            <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
+            <img src="<?php echo site_url(); ?>assets/images/properties/<?php echo $obj['property_image']; ?>" class="img-fluid w-100" alt="">
             <div class="img-head">
               <div>
-                <h6> Milroc Vista do Mar</h6>
+                <h6> <?php echo $obj['title']; ?></h6>
               </div>
             </div>
             <div class="image-wrapper--text">
               <div class="main--wapper--sec">
-                <h6> Milroc Colina </h6>
-                <p> Milroc Colina at Pilar - Goa Velha</p>
-                <p> 2 and 3 BHK Apartments</p>
-                <a href="#" class="know--mre">Know More</a>
+                <h6> <?php echo $obj['title']; ?> </h6>
+                <?php echo $obj['short_description']; ?>
+                <a href="<?php echo site_url('/projects/'.$obj['id']); ?>" class="know--mre">Know More</a>
               </div>
             </div>
           </div>
         </div>
+        <?php endforeach; ?>
 
-        <div class="col-one-pro project--list ">
+        <!-- <div class="col-one-pro project--list ">
           <div class="img-wrapper mb-2">
             <div class="pro--col" style="background: url('<?php echo base_url()?>optimum/main/images/project1.jpg')"> </div>
             <div class="img-head">
@@ -141,10 +144,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="row justify-content-between col-12">
+      <!-- <div class="row justify-content-between col-12">
         <div class="col-two-pro project--list">
           <div class=" img-wrapper">
             <img src="<?php echo base_url()?>optimum/main/images/project1.jpg" class="img-fluid w-100" alt="">
@@ -200,8 +203,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <a href="#" class="btn btn-typ1">View All<span><img src="<?php echo base_url()?>optimum/main/images/arrow2.png" alt=""></span></a>
+      </div> -->
+      <a href="/projects/" class="btn btn-typ1">View All<span><img src="<?php echo base_url()?>optimum/main/images/arrow2.png" alt=""></span></a>
     </div>
   </div>
 

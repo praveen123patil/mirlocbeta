@@ -57,8 +57,8 @@ $route['auth'] = 'auth/index';
 $route['aboutus'] = 'main/aboutus';
 $route['contact'] = 'main/contact';
 $route['csr'] = 'main/csr';
-$route['projects'] = 'main/projects';
-$route['projects-details'] = 'main/projects_details';
+$route['projects'] = 'main/properties';
+$route['projects/(:any)'] = 'main/projects_details/$1';
 
 $route['admin/homebanner/edit/(:any)'] = 'admin/homebanner/edit/$1';
 $route['admin/homebanner/delete/(:any)'] = 'admin/homebanner/delete/$1';

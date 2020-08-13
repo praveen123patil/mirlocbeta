@@ -1,42 +1,4 @@
 <main>
-        <div class="homemodal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img src="images/close.svg" alt="">
-                    </button>
-                    <div class="modal-head">
-                        <h5 class="modal-title">Let's talk about your need</h5>
-                        <p>Set Up a session with one of our custom space Managers</p>
-                    </div>
-
-                    <form action="" class="homecontact">
-                        <div class="form-group">
-                            <label for="fullname">Full Name</label>
-                            <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Best email to contact you">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" placeholder="+91 000 000 0000">
-                        </div>
-                        <div class="form-group">
-                            <label for="additional">Additional Note</label>
-                            <textarea class="form-control" id="additional" placeholder="Anything else we should know?"
-                                rows="3"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <button class="btn btn-contact" type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
         <!-- Banner section starts here -->
         <div class="container-fluid banner--header">
             <div class="container">
@@ -45,7 +7,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                                <li class="breadcrumb-item"><a href="/aboutus/">About Us</a></li>
                                 <li class="breadcrumb-item active" aria-current="page"><a href="">CSR</a></li>
                             </ol>
                         </nav>
@@ -66,7 +28,7 @@
         <section id="about-sec-tab" class="container-fluid p-0">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link " href="#about" role="tab" aria-controls="about" aria-selected="true">About
+                    <a class="nav-link " href="/aboutus/" role="tab" aria-controls="about" aria-selected="true">About
                         Us</a>
                 </li>
                 <li class="nav-item">

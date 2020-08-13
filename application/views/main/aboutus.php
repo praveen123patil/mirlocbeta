@@ -31,7 +31,7 @@
           <a class="nav-link active" href="#about" role="tab" aria-controls="about" aria-selected="true">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#csr" role="tab" aria-controls="csr" aria-selected="false">CSR</a>
+          <a class="nav-link" href="/csr/" role="tab" aria-controls="csr" aria-selected="false">CSR</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">

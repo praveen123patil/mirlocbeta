@@ -17,7 +17,7 @@
                                 <tbody>
                                   <?php foreach($propertybanner as $obj) : ?>
                                     <tr id="tr-id-1" class="tr-class-1">
-                                        <td> <a href="<?php echo site_url('admin/propertybanner/edit/'.$obj['id']); ?>"> <?php echo $obj['title']; ?> </td> </a>
+                                        <td> <a href="<?php echo site_url('admin/propertybanner/edit/'.$obj['pid']); ?>"> <?php echo $obj['title']; ?> </td> </a>
                                         <td><?php echo $obj['image_title']; ?></td>
                                         <td><img class="img-responsive" style="height:80px" alt="" src="<?php echo site_url(); ?>assets/images/properties/<?php echo $obj['image']; ?>" /></td>
                                     </tr>

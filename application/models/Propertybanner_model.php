@@ -9,15 +9,15 @@
 				$this->db->limit($limit, $offset);
 			}
 			if($id === FALSE){
-				$this->db->order_by('property_banner.id', 'DESC');
+				$this->db->order_by('property_banner.pid', 'DESC');
         $this->db->join('properties', 'properties.id = property_banner.property_id');
 				$query = $this->db->get('property_banner');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('property_banner', array('id' => $id));
+			$query = $this->db->get_where('property_banner', array('property_id' => $id));
 
-			return $query->row_array();
+			return $query->result_array();
 		}
 
 		public function create_post($image){
@@ -32,13 +32,13 @@
 		}
 
 		public function delete_post($id){
-			$image_file_name = $this->db->select('image')->get_where('property_banner', array('id' => $id))->row_array()->image;
+			$image_file_name = $this->db->select('image')->get_where('property_banner', array('pid' => $id))->row_array()->image;
 			$cwd = getcwd(); // save the current working directory
 			$image_file_path = $cwd."\\assets\\images\\properties\\";
 			chdir($image_file_path);
 			unlink($image_file_name);
 			chdir($cwd); // Restore the previous working directory
-			$this->db->where('id', $id);
+			$this->db->where('pid', $id);
 			$this->db->delete('property_banner');
 			return true;
 		}
@@ -51,7 +51,7 @@
 				'image' => $image,
 			);
 
-			$this->db->where('id', $this->input->post('id'));
+			$this->db->where('pid', $this->input->post('id'));
 			return $this->db->update('property_banner', $data);
 		}
 
